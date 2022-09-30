@@ -1,0 +1,131 @@
+.z0{
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z2{
+    z-index: 2;
+}
+
+.z3{
+    z-index: 3;
+}
+
+/*Header*/
+
+.container-fluid {
+    height: 18vh;
+    background-color: #343232;
+}
+
+div.barra{
+    padding-left: 20%;
+}
+.navbar {
+    background-color: #343232;
+    padding: 0%;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.nav-item {
+    color: gray;
+}
+
+.compra {
+    color: green;
+}
+
+.titulo{
+    color: white;
+    font-size: large;
+}
+
+
+.navbar-nav .sm{
+color: black;
+}
+
+/*.header a {
+    text-decoration: none;
+    color: white;
+}*/
+
+.cuerpo{
+    color: white;
+    font-size: large;
+    text-align: end !important;
+}
+
+.cabecera{
+    color: white;
+    font-size: large;
+    text-align: end !important;
+}
+
+.cajita {
+    padding-top: 10%;
+}
+
+div.botones {
+   padding-left: 30%;
+}
+
+.formato{
+    padding-right: 5%;
+}
+.bsas{
+    background-color: #41464b;
+    color: white;
+}
+
+.btn .opcion{
+    width: 20vw;
+}
+
+.epigrafe{
+    color: grey;
+}
+
+.oradores{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.form-control{
+    color: gray;
+}
+
+h5{
+    align-items: flex-end;
+}
+
+/*footer*/
+
+div.navbar, .navbar-expand-sm{
+    background-color: rgba(12, 66, 99);
+    height: 15vh;
+}
+
+div.navbar-collapse a{
+    color: white;
+}
+
+a.nav-link.active.inicio{
+    color: white;
+    
+}
+
+a.nav-link.active.inicio:hover{
+    color: rgb(4, 4, 40);
+}
+
