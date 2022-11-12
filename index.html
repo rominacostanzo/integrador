@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TP Integrador</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -12,71 +12,73 @@
 
 <body>
     <header>
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img class="logo" src="./assets/codoacodo.png" alt="Logo">
-             <div class="titulo">Conf Bs As</div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="logo" src="./assets/codoacodo.png" alt="Logo">
+          <div class="titulo"></div>
+          <a class="navbar-brand" href="#">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse show z3 barra" id="navbarDark">
+          <div class="collapse navbar-collapse show z3 barra" id="navbarNavAltMarkup">
             <ul class="navbar-nav me-auto mb-2 mb-xl-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+                <a class="nav-link letra" href="#">La Conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los Oradores</a>
+                <a class="nav-link letra" href="#">Los Oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha </a>
+                <a class="nav-link letra" href="#">El lugar y la fecha </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link compra" href="#">Comprar tickets</a>
+                <a class="nav-link compra" style="color: green;" href="./compra-tickets.html">Comprar tickets</a>
               </li>  
             </ul>
           </div>
         </div>
       </nav>
-        
     </header>
 
-    <main>
-      <div class="position-relative overflow-hidden">
+      <main>
+        <div class="position-relative overflow-hidden">
         <img src="./assets/hawaii.jpg" class="card-img-top z1" alt="Bs As Conf">
         <div class=" position-absolute top-0 w-100 h-100">
-          
-          <div class="row justify-content-end formato">
-            <div class="col-md-6 row justify-content-end shadow-img cajita">
-              <h5 class="cabecera">Conf Bs As</h5>
-              <p class="text-align-end cuerpo">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-              <div class="botones">
-                <button type="button" class="btn btn-outline-light opcion">Quiero ser orador</button>
-                <button type="button" class="btn btn-success opcion">Comprar tickets</button>  
-              </div> 
+          <section>    
+            <div class="row justify-content-end formato">
+              <div class="col-md-6 row justify-content-end shadow-img cajita">
+                <h5 class="cabecera">Conf Bs As</h5>
+                <p class="text-align-end cuerpo">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-light opcion">Quiero ser orador</button>
+                  <a href="./compra-tickets.html"><button type="button" class="btn btn-success opcion">Comprar tickets</button></a>   
+                </div> 
+              </div>
+             <div class="row formato"></div>
             </div>
-            <div class="row formato"></div>
           </div>
-        </div>
-    </div>
-
+          </div>
+          </section>
+      
+          <section>
         <div class="text-center">
             <div>Conoce a los</div>
             <div class="oradores">ORADORES</div>
         </div>
-        
+        </section>
 
+      <section>
         <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-sm-3">
             <div class="col">
               <div class="card">
                 <img src="assets/steve.jpg" class="card-img-top" alt="card-grid-image">
                 <div class="card-body">
-                    <div class="btn btn-primary">React</div>
-                    <div class="btn btn-warning">JavaScript</div>
+                  <div class="btn btn-warning">JavaScript</div>
+                  <div class="btn btn-primary">React</div>
                   <h5 class="card-title">Steve Jobs</h5>
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti, ipsam exercitationem, quaerat voluptates in incidunt deserunt, placeat cumque iusto nihil consequuntur! Nam, praesentium? Qui magnam molestias modi perferendis dolor.</p>
                 </div>
@@ -106,8 +108,12 @@
             </div>
             </div>
         </div>
+      </section>
+
         <div><br></div>
-        <div class="card mb-4" style="max-width: 100vw;">
+        
+        <section>
+          <div class="card mb-4" style="max-width: 100vw;">
             <div class="row g-0">
               <div class="col-md-6">
                 <img src="./assets/honolulu.jpg" class="img-fluid rounded-start" alt="honolulu">
@@ -120,7 +126,8 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
+        </section>
 
         <!--Formulario-->
     <div class="container">
@@ -130,7 +137,7 @@
             <div>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar</div>
         </div>
 
-        
+        <section> 
         <form class="row g-3">
             <div class="col-md-6">
               <label for="input" class="form-label"></label>
@@ -156,12 +163,13 @@
             <div><br></div>
           </form>
         </div>
+      </section>
     </main>
 
     <footer>
         <nav class="navbar navbar-expand-sm final">
             <div class="container">
-              <div class=" navbar-collapse justify-content-center" id="navbarNav">
+              <div class=" navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active inicio" aria-current="page" href="#">Preguntas Frecuentes</a>
@@ -192,9 +200,7 @@
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="./compra-ticket.js"></script>
+
 </body>
 </html>
-
-
-<!--<div class="d-grid gap-2"></div>
-"btn btn-success"-->
