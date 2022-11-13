@@ -28,13 +28,7 @@ const btnSend = document.getElementById ('send')
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.modal_close');
 const modalParagraph = document.querySelector('.modal-paragraph')
-//funciones
-//function mostrar (){
-//console.log (formName.value)
-//}
 
-//btnSend.addEventListener ("click", ()=> {mostrar ()
-//})
 
 const studentBorder=document.getElementById (`student-border`)
 const traineeBorder=document.getElementById (`trainee-border`)
@@ -44,12 +38,11 @@ let regExpMail= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 let regExpName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 let regExpNumber= /^[0-9]$/;
 
-
+//funciones
 //funciones mouseOver
 function flyersOver (flyers){
     flyers.classList.replace ('border-primary','border-warning');
 console.log ('over')
-
 }
 
 //funciones mouseLeave
@@ -184,7 +177,7 @@ formAmount.addEventListener('click',()=> {
             console.log (formAmount.value)
             console.log(`El valor de su ticket es $ ${unit (formToPay.value)}.-`)
             modal.classList.add ('modal--show'); 
-            modalParagraph.innerHTML= `nombre: ${formName.value} ${formLastname.value} 
+            modalParagraph.innerHTML= `Nombre: ${formName.value} ${formLastname.value} 
             Total ${formAmount.value} tickets por un valor total de ${unit (formToPay.value)}`
         }
     })
@@ -200,17 +193,8 @@ formAmount.addEventListener('click',()=> {
         } )
     
 
-//ventana modal
-        
-    //const openModal = document.querySelector('.decision');
-    
-    
 
-
-    /*openModal.addEventListener ('click',(e)=>{
-        e.preventDefault ();
         
-    })*/
 
     closeModal.addEventListener ('click',(e)=>{
         e.preventDefault ();
