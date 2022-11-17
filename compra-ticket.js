@@ -1,5 +1,5 @@
 //cuadros
-const student  = document.getElementById ('student')
+const student = document.getElementById ('student')
 const trainee = document.getElementById ('trainee')
 const junior = document.getElementById ('junior')
 const flyers = document.getElementsByClassName ('card')
@@ -76,15 +76,17 @@ function flyersClick (frame){
 }
 
 
-function asignarEventos (flyers){
+function 
+assignEvent (flyers){
     flyers.addEventListener('mouseover', ()=> flyersOver(flyers));
     flyers.addEventListener('mouseleave', ()=>flyersLeave(flyers));
     flyers.addEventListener('click', ()=>flyersClick (flyers))
 }
 
-asignarEventos(studentBorder);
-asignarEventos (traineeBorder);
-asignarEventos (juniorBorder)
+
+assignEvent(studentBorder);
+assignEvent (traineeBorder);
+assignEvent (juniorBorder)
 
 
 
@@ -144,8 +146,10 @@ formCategory.addEventListener('click', ()=>{
 formAmount.addEventListener('click',()=> {
     unit (formToPay.value)
 })
+    
 
     btnSend.addEventListener ('click', ()=>{
+        nameValue=formName.value;
         if (formName.value===""){
             alert ("El campo nombre debe estar completo");
         } 
@@ -177,10 +181,11 @@ formAmount.addEventListener('click',()=> {
             console.log (formAmount.value)
             console.log(`El valor de su ticket es $ ${unit (formToPay.value)}.-`)
             modal.classList.add ('modal--show'); 
-            modalParagraph.innerHTML= `Nombre: ${formName.value} ${formLastname.value} 
-            Total ${formAmount.value} tickets por un valor total de ${unit (formToPay.value)}`
+            modalParagraph.innerHTML= `Nombre: ${formName.value} ${formLastname.value}
+            Total ${formAmount.value} tickets por un valor total de $ ${unit (formToPay.value)}.-`
         }
     })
+
 
     btnDelete.addEventListener('click', ()=>{
         formToPay.value=200;
@@ -191,10 +196,6 @@ formAmount.addEventListener('click',()=> {
         formLastname.value= ``
         formMail.value= ``
         } )
-    
-
-
-        
 
     closeModal.addEventListener ('click',(e)=>{
         e.preventDefault ();

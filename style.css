@@ -22,11 +22,16 @@
 }
 
 div.barra{
-    padding-left: 20%;
+    padding-left: 25%;
+    padding-right: 0%;
 }
 .navbar {
     background-color: #343232;
-    padding: 0%;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-collaps{
+    padding-left: 0px;
 }
 
 .navbar-brand{
@@ -34,20 +39,46 @@ div.barra{
 }
 
 .logo {
-    height: 10vh;
+    height: 13vh;
 }
 
 .nav-item .letra {
     color: gray;
 }
 
+a.nav-link {
+    font-size: 18px;
+    color: white;
+}
+
+a.nav-link.menu:hover{
+    color: grey;
+}
+
+a.nav-link.letra{
+    font-size: 18px;
+}
+
+.orador:hover{
+    color: white;
+}
+
 a.nav-link.letra:hover{
 color: white;
 }
 
-.compra {
-    color: green;
+a.nav-link.compra {
+    color: rgb(14, 171, 14);
 }
+
+a.nav-link.compra:hover{
+    color: rgb(96, 240, 96);
+}
+
+div.collapse .navbar-collapse{
+    justify-content: flex-end;
+}
+
 
 .titulo{
     color: white;
@@ -121,19 +152,17 @@ h5{
 div.navbar, .navbar-expand-sm{
     background-color: rgba(12, 66, 99);
     height: 15vh;
-}
-
-div.navbar-collapse a{
+    justify-content: space-evenly; 
     color: white;
+    list-style: none;
 }
 
-a.nav-link.active.inicio{
-    color: white;
-    
-}
-
-a.nav-link.active.inicio:hover{
+a.nav-link:hover{
     color: rgb(4, 4, 40);
+}
+
+#navbarNav{
+    padding: 3%;
 }
 
 /*************************************pestaña comprar tickets***********************************/
@@ -158,7 +187,6 @@ a.nav-link.active.inicio:hover{
 }
 
 /*.div.boton-ticket.row{
-    
 }*/
 .costo{
 text-align: center;
@@ -174,6 +202,7 @@ text-align: center;
     background-color: rgb(151, 201, 62);
     border-radius: 5px;
     text-align: center;
+    
 }
 
 .boton-ticket{
